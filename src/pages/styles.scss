@@ -27,11 +27,24 @@
 
 .middle-item {
   margin-top: 8rem;
-  h4{
-    font-size: clamp(2.5rem, 24px, 1rem);
-    font-weight: bold;
+  .middle-first {
+    margin-top: 10rem;
+    h4 {
+      font-size: clamp(2.5rem, 24px, 1rem);
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
-  p{
-    font-size: 1rem;
+  .middle-inner-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.649)),
+      url("../assets/happy.webp");
+    height: 100vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 }

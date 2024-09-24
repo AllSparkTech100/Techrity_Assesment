@@ -40,24 +40,37 @@ function Home() {
         <Container>
           <Row>
             <Col md={6} sm={12} lg={6}>
-              <h5 className="my-3 text-dark fw-bold">KNOW ABOUT US</h5>
-              <h4 className="text-dark text-capitalize">
-                we provide a place for <br /> children with special needs
-              </h4>
-              <p className="mt-4 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate, consequuntur!
-              </p>
-              <p className="mt-4 mb-4">
-                consectetur adipisicing elit. Quidem harum repellendus iste
-                voluptates, atque laudantium corporis inventore quae fuga eius?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam sequi provident placeat veritatis mollitia ad ut voluptates, fugit et voluptatibus earum. Explicabo voluptatibus inventore praesentium vitae consequuntur! Error, quasi.
-              </p>
+              <div className="middle-first">
+                <h5 className="my-3 text-dark fw-bold">KNOW ABOUT US</h5>
+                <h4 className="text-dark text-capitalize">
+                  we provide a place for <br /> children with special needs
+                </h4>
+                <p className="mt-4 mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate, consequuntur!
+                </p>
+                <p className="mt-4 mb-4">
+                  consectetur adipisicing elit. Quidem harum repellendus iste
+                  voluptates, atque laudantium corporis inventore quae fuga
+                  eius? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione numquam sequi provident placeat veritatis mollitia ad
+                  ut voluptates, fugit et voluptatibus earum. Explicabo
+                  voluptatibus inventore praesentium vitae consequuntur! Error,
+                  quasi.
+                </p>
 
-              <button className="mt-5 page-btn bg-warning">
-              <a href="" className="text-dark">Learn More</a></button>
+                <button className="mt-5 page-btn bg-warning">
+                  <a href="" className="text-dark">
+                    Learn More
+                  </a>
+                </button>
+              </div>
             </Col>
-            <Col md={6} sm={12} lg={6}></Col>
+            <Col md={6} sm={12} lg={6}>
+              <div className="middle-inner-img bg-image">
+                <FaPlayCircle className="text-white" size={90} />
+              </div>
+            </Col>
           </Row>
         </Container>
         <Container>
@@ -77,7 +90,10 @@ function Home() {
               </p>
 
               <button className="mt-5 page-btn bg-warning">
-              <a href="" className="">Learn More</a></button>
+                <a href="" className="">
+                  Learn More
+                </a>
+              </button>
             </Col>
             <Col md={6} sm={12} lg={6}></Col>
           </Row>
