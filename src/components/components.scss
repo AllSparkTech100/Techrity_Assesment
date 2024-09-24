@@ -1,0 +1,17 @@
+@import "../_variables.scss";
+
+.header {
+  height: 4rem;
+  color: $black;
+  font-family: $Roboto;
+  font-size: 1rem;
+  background-color: $white;
+  .icon {
+    font-style: italic;
+    font-family: $Courgette;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 3rem;
+  }
+}

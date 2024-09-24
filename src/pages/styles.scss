@@ -1,0 +1,37 @@
+@import "../_variables.scss";
+
+.hero-carrier {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.657),
+      rgba(10, 10, 10, 0.787)
+    ),
+    url("../assets/happy.webp");
+  .hero-inner {
+    padding: 4rem 0;
+
+    h2 {
+      font-family: $Roboto;
+      font-size: clamp(4rem, 14px, 1rem);
+    }
+    .hero-bottom {
+      margin-top: 15rem;
+      .line {
+        width: 55%;
+        height: 1px;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.middle-item {
+  margin-top: 8rem;
+  h4{
+    font-size: clamp(2.5rem, 24px, 1rem);
+    font-weight: bold;
+  }
+  p{
+    font-size: 1rem;
+  }
+}
