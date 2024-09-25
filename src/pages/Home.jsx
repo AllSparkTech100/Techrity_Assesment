@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FaPlayCircle } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 import {
   ipsum,
   Ipsum,
@@ -7,7 +8,6 @@ import {
   oldIpsum,
   newIpsum,
   headphone,
-  chart,
 } from "../lib/Images";
 import {
   MdFamilyRestroom,
@@ -265,11 +265,14 @@ function Home() {
       </Container>
 
       <Container className="donations" fluid>
-        <Container>
+        <Container className="donations_inner">
           <Row>
             <Col md={7} lg={7}>
-              <h5 className="text-white">How we spend your donations and where it goes</h5>
-              <p className="my-5">
+              <h5 className="text-white">
+                How we spend your <br />
+                donations and where it goes
+              </h5>
+              <p className="my-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Similique consequatur voluptatem, ut nulla veritatis accusantium
                 totam ad, optio incidunt velit eum! Fugiat necessitatibus
@@ -277,11 +280,67 @@ function Home() {
               </p>
             </Col>
             <Col md={5} lg={5}>
-              <img src={chart} alt="" />
+              <h5 className="text-white">
+                How we spend your donations and where it goes
+              </h5>
+              <p className="my-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique consequatur voluptatem, ut nulla veritatis accusantium
+                totam ad, optio incidunt velit eum! Fugiat necessitatibus
+                laborum assumenda.
+              </p>
             </Col>
+            {/* <Col md={5} lg={5}>
+              <img src='' alt="" />
+            </Col> */}
           </Row>
         </Container>
       </Container>
+      {/* Journey Section */}
+      <section className="journey-carrier">
+        <Container className="bg-image journey">
+          <div className="journey-inner">
+            <h4 className="text-capitalize text-white">
+              you can contribute to provide a place <br /> for children with
+              special needs!
+            </h4>
+            <div className="mx-auto my-3">
+              <button className="page-btn vol_btn">
+                <a href="" className="text-dark">
+                  Join as Volunteer
+                </a>
+              </button>
+              <button className="page-btn ms-3">
+                <a
+                  href="
+      "
+                  className="text-dark"
+                >
+                  Donate
+                </a>
+              </button>
+            </div>
+          </div>
+        </Container>
+        {/* Events */}
+        <Container className="mt-5 events">
+          <h5 className="text-capitalize">our events</h5>
+
+          <div className="calendar-box mt-5">
+            <div className="calendar-inner">
+              <div className="date text-capitalize">
+                13 <span className="fw-medium">apr</span>
+              </div>
+              <div className="day-title text-capitalize">
+                a day with our wonderful children
+              </div>
+              <div className="calendar_btn">
+                <FaArrowRight size={15} />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
     </>
   );
 }

@@ -164,7 +164,82 @@
   }
 }
 
-.donations{
+.donations {
   margin-top: 9rem;
   background-color: $black;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .donations_inner {
+    margin: auto;
+    background: red;
+    h5 {
+      font-size: 2rem;
+    }
+    p {
+      word-wrap: break-word;
+    }
+  }
+}
+
+.journey-carrier {
+  .journey {
+    margin-top: 4rem;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.609),
+        rgba(0, 0, 0, 0.608)
+      ),
+      url("../assets/mission.webp");
+    height: 50vh;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .journey-inner {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      h4 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .events {
+    h5 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .calendar-box {
+      height: 100px;
+      width: 300px;
+      border-radius: 10px;
+      background-color: $volBtn;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-weight: bold !important;
+      .calendar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .date{
+          position: relative;
+          bottom: 10px;
+        }
+        .calendar_btn {
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          background-color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

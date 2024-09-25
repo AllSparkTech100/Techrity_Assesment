@@ -14,10 +14,11 @@
 
 $white: snow;
 $black: black;
-$medium:#fcedc6;
+$medium: #fcedc6;
 $Inter: "Inter", sans-serif;
 $Roboto: "Roboto", sans-serif;
 $Courgette: "Courgette", cursive;
+$volBtn:#F2C94C;
 
 .bg-image {
   background-position: center;
@@ -32,6 +33,9 @@ $Courgette: "Courgette", cursive;
   a {
     font-size: clamp(1rem, 32px, 1rem);
     color: $black;
+  }
+  &.vol_btn {
+    background-color:$volBtn ;
   }
 }
 
