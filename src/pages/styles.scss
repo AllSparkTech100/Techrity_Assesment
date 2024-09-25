@@ -57,26 +57,26 @@
 
 .service_carrier {
   background-color: $medium;
-  height: 100vh;
+  height: 115vh;
   margin-top: 4rem;
 
   .service-inner {
     margin-top: 4rem;
-    h4{
-      font-size: clamp(3rem, 24px, 1rem);
+    h4 {
+      font-size: clamp(2rem, 24px, 1rem);
     }
-    p{
+    p {
       font-size: 16px;
     }
 
-    .service-list{
+    .service-list {
       margin-top: 2rem;
-      .serv-list-item{
+      .serv-list-item {
         display: flex;
         flex-direction: row;
-        align-items:center;
+        align-items: center;
         justify-content: space-around;
-        .serv-icon{
+        .serv-icon {
           height: 40px;
           width: 40px;
           background-color: $black;
@@ -87,20 +87,40 @@
           padding: 5px;
           border-radius: 4px;
         }
-        .serv-text{
-          h5{
+        .serv-text {
+          h5 {
             font-size: clamp(2rem, 24px, 1rem);
             font-weight: bold;
           }
-          p{
+          p {
             font-size: 1rem;
-            
           }
         }
       }
     }
-    .head-img{
-      background-image: linear-gradient(rgb(0,0,0), rgb(0,0,0,0)),url('../assets/headphone.webp');
+  }
+  .head-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 3rem;
+    margin-top: 40px;
+    img {
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: 58% center;
+      width: 100%;
+    }
+  }
+}
+
+.projects{
+  margin-top: 10rem;
+  .intro-text{
+    h4{
+font-size: clamp(3rem, 16px, 1rem);
     }
   }
 }

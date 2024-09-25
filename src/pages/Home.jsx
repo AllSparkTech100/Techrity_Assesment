@@ -1,6 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FaPlayCircle } from "react-icons/fa";
-import { ipsum, Ipsum, lorem, oldIpsum, newIpsum } from "../lib/Images";
+import Project from "../components/Project";
+import {
+  ipsum,
+  Ipsum,
+  lorem,
+  oldIpsum,
+  newIpsum,
+  headphone,
+} from "../lib/Images";
 import {
   MdFamilyRestroom,
   MdOutlineHealthAndSafety,
@@ -101,8 +109,8 @@ function Home() {
       <section className=" service_carrier">
         <Container>
           <Row>
-            <section className="service-inner">
-              <Col md={6} sm={12} lg={6}>
+            <Col md={6} sm={12} lg={6}>
+              <section className="service-inner">
                 <h5 className="my-3 fw-bold text-uppercase">what we do</h5>
                 <h4 className="text-dark fw-bold text-capitalize">
                   some services we provide <br /> for our children
@@ -117,11 +125,12 @@ function Home() {
                     <div className="serv-icon">
                       <MdFamilyRestroom size={30} />
                     </div>
-                    <div className="serv-text">
+                    <div className="serv-text ms-3">
                       <h5>Family Support</h5>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore, aliquam.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Rerum, doloribus tempora? Unde ab provident odit
+                        officiis libero eius quo eaque!
                       </p>
                     </div>
                   </div>
@@ -129,11 +138,12 @@ function Home() {
                     <div className="serv-icon">
                       <MdOutlineHealthAndSafety size={30} />
                     </div>
-                    <div className="serv-text">
+                    <div className="serv-text ms-3">
                       <h5>Health Benefits</h5>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore, aliquam.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Rerum, doloribus tempora? Unde ab provident odit
+                        officiis libero eius quo eaque!
                       </p>
                     </div>
                   </div>
@@ -141,11 +151,12 @@ function Home() {
                     <div className="serv-icon">
                       <MdCastForEducation size={30} />
                     </div>
-                    <div className="serv-text">
+                    <div className="serv-text ms-3">
                       <h5 className="text-capitalize">Scholarships</h5>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore, aliquam.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Rerum, doloribus tempora? Unde ab provident odit
+                        officiis libero eius quo eaque!
                       </p>
                     </div>
                   </div>
@@ -153,24 +164,46 @@ function Home() {
                     <div className="serv-icon">
                       <RiPsychotherapyFill size={30} />
                     </div>
-                    <div className="serv-text">
+                    <div className="serv-text ms-3">
                       <h5 className="text-capitalize">Therapy</h5>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore, aliquam.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Rerum, doloribus tempora? Unde ab provident odit
+                        officiis libero eius quo eaque!
                       </p>
                     </div>
                   </div>
                 </div>
-              </Col>
-              <Col md={6} sm={12} lg={6}>
-              <div className="head-img bg-image">
+              </section>
+            </Col>
+            <Col md={6} sm={12} lg={6}>
+              <div className="head-img">
+                <img
+                  src={headphone}
+                  className="img-fluid "
+                  alt="Thinking Child"
+                  loading="lazy"
+                />
               </div>
-              </Col>
-            </section>
+            </Col>
           </Row>
         </Container>
       </section>
+
+      {/* Projects */}
+      <Container className="projects">
+        <div className="intro-text">
+          <h5 className="text-uppercase mb-3 fw-bold">
+            projects we have done
+          </h5>
+          <h4 className="text-capitalize fw-bold ms-3">
+            we are creating a place <br/> where children with special <br/> needs can thrive
+          </h4>
+          <div className="project-list">
+            <Project/>
+          </div>
+        </div>
+      </Container>
     </>
   );
 }
