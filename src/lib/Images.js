@@ -6,3 +6,4 @@ export { default as lorem } from "../assets/Logo (4).png";
 export { default as oldIpsum } from "../assets/Logo (3).png";
 export { default as newIpsum } from "../assets/Logo (2).png";
 export { default as mission } from "../assets/mission.webp";
+export { default as escort } from "../assets/excort.png";

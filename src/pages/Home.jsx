@@ -7,6 +7,7 @@ import {
   oldIpsum,
   newIpsum,
   headphone,
+  chart,
 } from "../lib/Images";
 import {
   MdFamilyRestroom,
@@ -192,24 +193,94 @@ function Home() {
       {/* Projects */}
       <Container className="projects">
         <div className="intro-text">
-          <h5 className="text-uppercase mb-3 fw-bold">
-            projects we have done
-          </h5>
+          <h5 className="text-uppercase mb-3 fw-bold">projects we have done</h5>
           <h4 className="text-capitalize fw-bold ms-3">
-            we are creating a place <br/> where children with special <br/> needs can thrive
+            we are creating a place <br /> where children with special <br />{" "}
+            needs can thrive
           </h4>
+          {/* Project  List */}
           <div className="project-list">
-           <Row>
-          <Col md={4} lg={4} sm={12}>
-            <div className="mission">
-              <h4 className="text-capitalize">
-                Mission smile 1k:
-              </h4>
-            </div>
-          </Col>
-           </Row>
+            <Row>
+              {/* mission */}
+              <Col md={4} lg={4} sm={12}>
+                <div className=" mission mission bg-image">
+                  <div className="ms-3">
+                    <h5 className="text-capitalize">
+                      Mission smile 1k: <br /> outdoor charity
+                    </h5>
+                    <p className="my-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium eaque aliquam ducimus? Vitae dolorem possimus
+                    </p>
+
+                    <button className="page-btn miss-btn">
+                      <a href="" className="text-black fw-medium">
+                        Learn More
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </Col>
+              {/* excursion */}
+              <Col md={4} lg={4} sm={12}>
+                <div className="mission excursion bg-image">
+                  <div className="ms-3">
+                    <h5 className="text-capitalize">weekly excursion</h5>
+                    <p className="my-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium eaque aliquam ducimus? Vitae dolorem possimus
+                    </p>
+
+                    <button className="page-btn miss-btn">
+                      <a href="" className="text-black fw-medium">
+                        Learn More
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </Col>
+              {/* awareness */}
+              <Col md={4} lg={4} sm={12}>
+                <div className="mission awareness bg-image">
+                  <div className="ms-3">
+                    <h5 className="text-capitalize">
+                      Monthly public <br /> awareness
+                    </h5>
+                    <p className="my-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium eaque aliquam ducimus? Vitae dolorem possimus
+                    </p>
+
+                    <button className="page-btn miss-btn">
+                      <a href="" className="text-black fw-medium">
+                        Learn More
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </div>
         </div>
+      </Container>
+
+      <Container className="donations" fluid>
+        <Container>
+          <Row>
+            <Col md={7} lg={7}>
+              <h5 className="text-white">How we spend your donations and where it goes</h5>
+              <p className="my-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Similique consequatur voluptatem, ut nulla veritatis accusantium
+                totam ad, optio incidunt velit eum! Fugiat necessitatibus
+                laborum assumenda.
+              </p>
+            </Col>
+            <Col md={5} lg={5}>
+              <img src={chart} alt="" />
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </>
   );
