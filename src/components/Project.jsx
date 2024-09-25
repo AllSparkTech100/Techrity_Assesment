@@ -1,6 +1,6 @@
 import "./components.scss";
-import { Card, Col, Row } from "react-bootstrap";
-import { mission } from "../lib/Images";
+import { Container, Card, Col, Row } from "react-bootstrap";
+import { mission } from "../assets/children.jpg";
 
 function Project() {
   const List = [
@@ -22,27 +22,33 @@ function Project() {
   ];
   return (
     <>
-      {List.map((items, index) => {
-        <Row key={index}>
-          <Col>
-            <Card className="bg-dark text-white">
-              <Card.Img
-                src={items.img}
-                alt={items.title}
-                loading="
+      <Container>
+        <Row>
+          {List.map((items, index) => {
+            return(
+              <Col md={4} sm={12} lg={4} key={index}>
+              <Card className="bg-dark text-white">
+                <Card.Img
+                  src={items.img}
+                  alt={items.title}
+                  loading="
             lazy"
-              />
-              <Card.ImgOverlay>
-                <Card.Title>{items.title}</Card.Title>
-                <Card.Text>{items.text}</Card.Text>
-                <button className="page-btn">
-                    <a href="" className="text-dark">Learn More</a>
-                </button>
-              </Card.ImgOverlay>
-            </Card>
-          </Col>
-        </Row>;
-      })}
+                />
+                <Card.ImgOverlay>
+                  <Card.Title>{items.title}</Card.Title>
+                  <Card.Text>{items.text}</Card.Text>
+                  <button className="page-btn">
+                    <a href="" className="text-dark">
+                      Learn More
+                    </a>
+                  </button>
+                </Card.ImgOverlay>
+              </Card>
+            </Col>
+            );
+          })}
+        </Row>
+      </Container>
     </>
   );
 }
