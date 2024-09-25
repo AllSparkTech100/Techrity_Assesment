@@ -1,5 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FaPlayCircle } from "react-icons/fa";
+import { ipsum, Ipsum, lorem, oldIpsum, newIpsum } from "../lib/Images";
+import {
+  MdFamilyRestroom,
+  MdOutlineHealthAndSafety,
+  MdCastForEducation,
+} from "react-icons/md";
+import { RiPsychotherapyFill } from "react-icons/ri";
 import "./styles.scss";
 
 function Home() {
@@ -38,6 +45,7 @@ function Home() {
 
       <section className="middle-item">
         <Container>
+          {/* know us */}
           <Row>
             <Col md={6} sm={12} lg={6}>
               <div className="middle-first">
@@ -72,30 +80,94 @@ function Home() {
               </div>
             </Col>
           </Row>
+          {/* Supporters */}
+          <section>
+            <div className="d-flex mt-5 align-items-center">
+              <h5 className="text-uppercase fs-6">Our supporters</h5>
+              <div className="support-line ms-3 mb-2 bg-dark"></div>
+            </div>
+
+            <div className="d-flex mt-5 flex-wrap justify-content-between align-items-center">
+              <img src={ipsum} alt="" loading="lazy" />
+              <img src={newIpsum} alt="" loading="lazy" />
+              <img src={oldIpsum} alt="" loading="lazy" />
+              <img src={lorem} alt="" loading="lazy" />
+              <img src={Ipsum} alt="" loading="lazy" />
+            </div>
+          </section>
         </Container>
+      </section>
+      {/* Service section */}
+      <section className=" service_carrier">
         <Container>
           <Row>
-            <Col md={6} sm={12} lg={6}>
-              <h5 className="my-3 text-dark fw-bold">KNOW ABOUT US</h5>
-              <h4 className="text-dark text-capitalize">
-                we provide a place for <br /> children with special needs
-              </h4>
-              <p className="mt-3 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Cupiditate, consequuntur!
-              </p>
-              <p className="mt-3 mb-3">
-                consectetur adipisicing elit. Quidem harum repellendus iste
-                voluptates, atque laudantium corporis inventore quae fuga eius?
-              </p>
-
-              <button className="mt-5 page-btn bg-warning">
-                <a href="" className="">
-                  Learn More
-                </a>
-              </button>
-            </Col>
-            <Col md={6} sm={12} lg={6}></Col>
+            <section className="service-inner">
+              <Col md={6} sm={12} lg={6}>
+                <h5 className="my-3 fw-bold text-uppercase">what we do</h5>
+                <h4 className="text-dark fw-bold text-capitalize">
+                  some services we provide <br /> for our children
+                </h4>
+                <p className="my-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Aspernatur iusto quibusdam voluptatem numquam? Sequi, id!
+                </p>
+                {/* List of services */}
+                <div className="service-list">
+                  <div className="serv-list-item">
+                    <div className="serv-icon">
+                      <MdFamilyRestroom size={30} />
+                    </div>
+                    <div className="serv-text">
+                      <h5>Family Support</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore, aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="serv-list-item">
+                    <div className="serv-icon">
+                      <MdOutlineHealthAndSafety size={30} />
+                    </div>
+                    <div className="serv-text">
+                      <h5>Health Benefits</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore, aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="serv-list-item">
+                    <div className="serv-icon">
+                      <MdCastForEducation size={30} />
+                    </div>
+                    <div className="serv-text">
+                      <h5 className="text-capitalize">Scholarships</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore, aliquam.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="serv-list-item">
+                    <div className="serv-icon">
+                      <RiPsychotherapyFill size={30} />
+                    </div>
+                    <div className="serv-text">
+                      <h5 className="text-capitalize">Therapy</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore, aliquam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              <Col md={6} sm={12} lg={6}>
+              <div className="head-img bg-image">
+              </div>
+              </Col>
+            </section>
           </Row>
         </Container>
       </section>

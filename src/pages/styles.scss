@@ -15,7 +15,7 @@
       font-size: clamp(4rem, 14px, 1rem);
     }
     .hero-bottom {
-      margin-top: 15rem;
+      margin-top: 13rem;
       .line {
         width: 55%;
         height: 1px;
@@ -46,5 +46,61 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+
+  .support-line {
+    width: 86%;
+    height: 1px;
+    background-color: $black;
+  }
+}
+
+.service_carrier {
+  background-color: $medium;
+  height: 100vh;
+  margin-top: 4rem;
+
+  .service-inner {
+    margin-top: 4rem;
+    h4{
+      font-size: clamp(3rem, 24px, 1rem);
+    }
+    p{
+      font-size: 16px;
+    }
+
+    .service-list{
+      margin-top: 2rem;
+      .serv-list-item{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        .serv-icon{
+          height: 40px;
+          width: 40px;
+          background-color: $black;
+          color: $medium;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          border-radius: 4px;
+        }
+        .serv-text{
+          h5{
+            font-size: clamp(2rem, 24px, 1rem);
+            font-weight: bold;
+          }
+          p{
+            font-size: 1rem;
+            
+          }
+        }
+      }
+    }
+    .head-img{
+      background-image: linear-gradient(rgb(0,0,0), rgb(0,0,0,0)),url('../assets/headphone.webp');
+    }
   }
 }
