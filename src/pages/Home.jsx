@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { FaPlayCircle } from "react-icons/fa";
-import Project from "../components/Project";
 import {
   ipsum,
   Ipsum,
