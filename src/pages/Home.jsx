@@ -200,7 +200,15 @@ function Home() {
             we are creating a place <br/> where children with special <br/> needs can thrive
           </h4>
           <div className="project-list">
-            <Project/>
+           <Row>
+          <Col md={4} lg={4} sm={12}>
+            <div className="mission">
+              <h4 className="text-capitalize">
+                Mission smile 1k:
+              </h4>
+            </div>
+          </Col>
+           </Row>
           </div>
         </div>
       </Container>
