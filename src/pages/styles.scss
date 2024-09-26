@@ -257,3 +257,44 @@
     }
   }
 }
+
+// about page
+
+.about-intro {
+  margin-top: 4rem;
+  h5 {
+    font-size: 1rem;
+    font-family: $Roboto;
+  }
+  h4 {
+    font-size: 3rem;
+    font-family: $Roboto;
+  }
+  p {
+    text-align: justify;
+    font-family: $Roboto;
+  }
+}
+.statements {
+  background-color: $medium;
+  margin-top: 20rem;
+  .people {
+    position: relative;
+    bottom: 180px;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.537),
+        rgba(0, 0, 0, 0.585)
+      ),
+      url("../assets/people.jpeg");
+    height: 60vh;
+    // background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: $white;
+  }
+}
