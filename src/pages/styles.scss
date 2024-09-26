@@ -188,13 +188,12 @@
     margin-top: 4rem;
     border-radius: 10px;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.609),
-        rgba(0, 0, 0, 0.608)
+        rgba(0, 0, 0, 0.676),
+        rgba(0, 0, 0, 0.674)
       ),
       url("../assets/mission.webp");
     height: 50vh;
     display: flex;
-    // flex-direction: column;
     align-items: center;
     justify-content: center;
     .journey-inner {
@@ -208,36 +207,51 @@
     }
   }
   .events {
+    margin-top: 5rem;
     h5 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
     }
     .calendar-box {
       height: 100px;
-      width: 300px;
       border-radius: 10px;
       background-color: $volBtn;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       padding: 20px;
-      font-weight: bold !important;
+      font-weight: bold;
       .calendar-inner {
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        .date{
+        justify-content: space-between;
+        .date {
           position: relative;
           bottom: 10px;
+          h5 {
+            font-size: 1.5rem;
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+        .day-title {
+          font-weight: bold;
+          font-size: 1rem;
         }
         .calendar_btn {
           border-radius: 50%;
-          height: 30px;
-          width: 30px;
+          height: 35px;
+          width: 35px;
           background-color: $white;
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 10px;
+          a {
+            color: $black !important;
+          }
         }
       }
     }

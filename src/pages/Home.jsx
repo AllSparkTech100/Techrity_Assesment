@@ -323,22 +323,56 @@ function Home() {
           </div>
         </Container>
         {/* Events */}
-        <Container className="mt-5 events">
+        <Container className="events">
           <h5 className="text-capitalize">our events</h5>
-
-          <div className="calendar-box mt-5">
-            <div className="calendar-inner">
-              <div className="date text-capitalize">
-                13 <span className="fw-medium">apr</span>
+          <Row>
+            <div className="col-md-6 mb-sm-2 col-lg-6 col-sm-12">
+              <div className="calendar-box mt-4">
+                <div className="calendar-inner">
+                  <div className="date text-capitalize">
+                    <h5 className="fw-bold">
+                      13 <br />
+                      <span className="fw-normal text-uppercase">apr</span>
+                    </h5>
+                  </div>
+                  <div className="day-title text-capitalize">
+                    a day with our wonderful children
+                  </div>
+                  <div className="calendar_btn">
+                    <a href="">
+                      <FaArrowRight size={15} />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="day-title text-capitalize">
-                a day with our wonderful children
-              </div>
-              <div className="calendar_btn">
-                <FaArrowRight size={15} />
+              <div className="text-center">
+                <h6 className="mt-3 text-uppercase">next events</h6>
               </div>
             </div>
-          </div>
+            <div className="col-md-6 mb-sm-2 col-lg-6 col-sm-12">
+              <div className="calendar-box mt-4">
+                <div className="calendar-inner">
+                  <div className="date text-capitalize">
+                    <h5 className="fw-bold">
+                      25 <br />
+                      <span className="fw-normal text-uppercase">apr</span>
+                    </h5>
+                  </div>
+                  <div className="day-title text-capitalize">
+                   Seminar: caring for children with autism
+                  </div>
+                  <div className="calendar_btn">
+                    <a href="">
+                      <FaArrowRight size={15} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center">
+                <h6 className="mt-3 text-uppercase">next events</h6>
+              </div>
+            </div>
+          </Row>
         </Container>
       </section>
     </>
