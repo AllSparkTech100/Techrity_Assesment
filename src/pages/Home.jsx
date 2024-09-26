@@ -75,14 +75,14 @@ function Home() {
                   quasi.
                 </p>
 
-                <button className="mt-5 page-btn bg-warning">
+                <button className="mt-3 mt-md-5 mt-lg-5 page-btn bg-warning">
                   <a href="" className="text-dark">
                     Learn More
                   </a>
                 </button>
               </div>
             </Col>
-            <Col md={6} sm={12} lg={6}>
+            <Col md={6} sm={12} lg={6} className="mt-5 mt-md-0 mt-lg-0">
               <div className="middle-inner-img bg-image">
                 <FaPlayCircle className="text-white" size={90} />
               </div>

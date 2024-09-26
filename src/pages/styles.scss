@@ -12,7 +12,7 @@
 
     h2 {
       font-family: $Roboto;
-      font-size: clamp(4rem, 14px, 1rem);
+      font-size: 4rem;
     }
     .hero-bottom {
       margin-top: 13rem;
@@ -341,4 +341,105 @@
       border-radius: 20px;
     }
   }
+}
+
+.teams {
+  margin-top: 9rem;
+}
+// About page style ends
+
+// MEDIA QUERIES
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 480px) {
+  .about-intro {
+    h5 {
+      font-size: 1rem;
+      font-family: $Roboto;
+    }
+    h4 {
+      font-size: 2rem;
+      font-family: $Roboto;
+    }
+  }
+
+  .statements {
+    margin-top: 10rem;
+    .people {
+      position: relative;
+      bottom: 95px;
+      height: 20vh;
+    }
+
+    .statement-inner {
+      h5 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .awards {
+    .awards-text {
+      font-size: 1.4rem;
+    }
+  }
+
+  .milestone {
+    .mile-inner {
+      padding: 20px;
+      h4 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .journey-carrier {
+    .journey {
+      .journey-inner {
+        h4 {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .hero-carrier {
+    .hero-inner {
+      h2 {
+        font-size: 3rem;
+      }
+      .hero-bottom {
+        p {
+          font-size: 16px;
+        }
+        .line {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .middle-item {
+    margin-top: 4rem;
+    .middle-inner-img {
+      height: 50vh;
+    }
+    .middle-first {
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 1024px) {
 }
