@@ -290,11 +290,55 @@
       ),
       url("../assets/people.jpeg");
     height: 60vh;
-    // background-position: top center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     color: $white;
+  }
+
+  .statement-inner {
+    margin-top: -3rem;
+    text-align: justify;
+    color: $black;
+    h5 {
+      font-size: 1.5rem;
+    }
+  }
+}
+.awards {
+  margin-top: 4rem;
+  text-align: center;
+  .awards-text {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+.milestone {
+  background-color: $volBtn;
+  margin-top: 10rem;
+  border-radius: 20px;
+  .mile-inner {
+    padding: 70px;
+    h5 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 3rem;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  .journey-image {
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
   }
 }

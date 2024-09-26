@@ -7,3 +7,8 @@ export { default as oldIpsum } from "../assets/Logo (3).png";
 export { default as newIpsum } from "../assets/Logo (2).png";
 export { default as mission } from "../assets/mission.webp";
 export { default as escort } from "../assets/excort.png";
+export { default as ngo_award } from "../assets/ngo.png";
+export { default as best_award } from "../assets/best.png";
+export { default as csn_award } from "../assets/csn.png";
+export { default as global_award } from "../assets/global.png";
+export { default as care } from "../assets/care.png";
