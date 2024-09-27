@@ -59,11 +59,19 @@
     }
   }
 }
+
+.menu-carrier {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $medium;
+}
 @media screen and (max-width: 480px) {
   .footer-carrier {
     .sub_form {
       width: 310px !important;
-      input{
+      input {
         width: 100%;
       }
       width: 80%;

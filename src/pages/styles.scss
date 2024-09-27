@@ -468,22 +468,25 @@
         }
       }
     }
-    .head-img{
+    .head-img {
       display: none;
     }
   }
 
-  .projects{
-    .intro-text{
-      h4{
+  .projects {
+    .intro-text {
+      h4 {
         font-size: 1.5rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1200px) {
+  .service_carrier {
+    height: 125vh;
+  }
 }

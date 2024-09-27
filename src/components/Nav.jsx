@@ -32,16 +32,16 @@ function NavComp() {
           </Navbar.Collapse>
          
           <button
-                className="d-lg-none d-sm-block shadow-none"
+                className="d-lg-none d-sm-block border-0 shadow-none"
                 onClick={toggleMenu}
               >
-                {isMenuVisible ? <IoClose className='shadow-none border-0' size={20}/> : <CiMenuFries className='shadow-none border-0' size={20}/>}
+                {isMenuVisible ? <IoClose size={30}/> : <CiMenuFries size={30}/>}
               </button>
         </Container>
       </Navbar>
       {isMenuVisible && (
-        <Container fluid className="">
-          <div className="">
+        <Container fluid className="menu-carrier">
+          <div className="menu-inner">
             <ul>
               <Nav.Link href="/" className="">
                 Home
