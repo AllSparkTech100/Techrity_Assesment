@@ -27,10 +27,13 @@
 
 .middle-item {
   margin-top: 8rem;
+  h5 {
+    font-size: 1rem;
+  }
   .middle-first {
     margin-top: 10rem;
     h4 {
-      font-size: clamp(2.5rem, 24px, 1rem);
+      font-size: 3rem;
       font-weight: bold;
     }
     p {
@@ -63,7 +66,7 @@
   .service-inner {
     margin-top: 4rem;
     h4 {
-      font-size: clamp(2rem, 24px, 1rem);
+      font-size: 3rem;
     }
     p {
       font-size: 16px;
@@ -89,7 +92,7 @@
         }
         .serv-text {
           h5 {
-            font-size: clamp(2rem, 24px, 1rem);
+            font-size: 1.5rem;
             font-weight: bold;
           }
           p {
@@ -120,7 +123,7 @@
   margin-top: 10rem;
   .intro-text {
     h4 {
-      font-size: clamp(3rem, 16px, 1rem);
+      font-size: 3rem;
     }
   }
 
@@ -426,13 +429,54 @@
 
   .middle-item {
     margin-top: 4rem;
+    h5 {
+      font-size: 18px;
+    }
     .middle-inner-img {
       height: 50vh;
     }
     .middle-first {
+      h4 {
+        font-size: 2rem;
+      }
       p {
         font-size: 18px;
         text-align: justify;
+      }
+    }
+    .support-line {
+      width: 70%;
+    }
+  }
+
+  .service_carrier {
+    height: 120vh;
+    .service-inner {
+      h4 {
+        font-size: 2rem;
+      }
+      .service-list {
+        .serv-list-item {
+          .serv-text {
+            // h5{
+
+            // }
+            p {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+    .head-img{
+      display: none;
+    }
+  }
+
+  .projects{
+    .intro-text{
+      h4{
+        font-size: 1.5rem;
       }
     }
   }

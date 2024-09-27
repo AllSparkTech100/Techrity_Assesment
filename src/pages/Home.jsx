@@ -91,16 +91,27 @@ function Home() {
           {/* Supporters */}
           <section>
             <div className="d-flex mt-5 align-items-center">
-              <h5 className="text-uppercase fs-6">Our supporters</h5>
+              <h5 className="text-uppercase">Our supporters</h5>
               <div className="support-line ms-3 mb-2 bg-dark"></div>
             </div>
 
-            <div className="d-flex mt-5 flex-wrap justify-content-between align-items-center">
-              <img src={ipsum} alt="" loading="lazy" />
-              <img src={newIpsum} alt="" loading="lazy" />
-              <img src={oldIpsum} alt="" loading="lazy" />
-              <img src={lorem} alt="" loading="lazy" />
-              <img src={Ipsum} alt="" loading="lazy" />
+            <div className="d-flex my-3 flex-wrap justify-content-between align-items-center">
+              <div className="col-sm-3 mb-md-0 mb-lg-0 mb-3 col-md-2">
+                <img src={ipsum} alt="" loading="lazy" />
+              </div>
+              <div className="col-sm-3 mb-md-0 mb-lg-0 mb-3 col-md-2">
+                {" "}
+                <img src={newIpsum} alt="" loading="lazy" />
+              </div>
+              <div className="col-sm-3 mb-md-0 mb-lg-0 mb-3 col-md-2">
+                <img src={Ipsum} alt="" loading="lazy" />
+              </div>
+              <div className="col-sm-3 mb-md-0 mb-lg-0 mb-3 col-md-2">
+                <img src={oldIpsum} alt="" loading="lazy" />
+              </div>
+              <div className="col-sm-3 mb-md-0 mb-lg-0 mb-3 col-md-2">
+                <img src={lorem} alt="" loading="lazy" />
+              </div>
             </div>
           </section>
         </Container>
@@ -202,7 +213,7 @@ function Home() {
           <div className="project-list">
             <Row>
               {/* mission */}
-              <Col md={4} lg={4} sm={12}>
+              <Col md={4} lg={4} sm={12} className='mb-md-0 mb-lg-0  mb-4'>
                 <div className=" mission mission bg-image">
                   <div className="ms-3">
                     <h5 className="text-capitalize">
@@ -222,7 +233,7 @@ function Home() {
                 </div>
               </Col>
               {/* excursion */}
-              <Col md={4} lg={4} sm={12}>
+              <Col md={4} lg={4} sm={12} className='mb-md-0 mb-lg-0  mb-4'>
                 <div className="mission excursion bg-image">
                   <div className="ms-3">
                     <h5 className="text-capitalize">weekly excursion</h5>
@@ -240,7 +251,7 @@ function Home() {
                 </div>
               </Col>
               {/* awareness */}
-              <Col md={4} lg={4} sm={12}>
+              <Col md={4} lg={4} sm={12} className='mb-md-0 mb-lg-0  mb-4'>
                 <div className="mission awareness bg-image">
                   <div className="ms-3">
                     <h5 className="text-capitalize">

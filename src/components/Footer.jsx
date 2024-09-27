@@ -47,7 +47,7 @@ function Footer() {
                     required
                   />
                 </Form.Group>
-                <div className="sub_btn ms-auto">
+                <div className="sub_btn ms-md-3 ms-lg-3 ms-auto">
                   {" "}
                   <a href="" className="text-black ">
                     Subscribe
