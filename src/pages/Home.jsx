@@ -278,7 +278,7 @@ function Home() {
       <Container className="donations" fluid>
         <Container className="donations_inner">
           <Row>
-            <Col md={7} lg={7}>
+            <Col md={7} lg={7} sm={12}>
               <h5 className="text-white">
                 How we spend your <br />
                 donations and where it goes
@@ -290,20 +290,13 @@ function Home() {
                 laborum assumenda.
               </p>
             </Col>
-            <Col md={5} lg={5}>
-              <h5 className="text-white">
-                How we spend your donations and where it goes
-              </h5>
-              <p className="my-5">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique consequatur voluptatem, ut nulla veritatis accusantium
-                totam ad, optio incidunt velit eum! Fugiat necessitatibus
-                laborum assumenda.
-              </p>
-            </Col>
-            {/* <Col md={5} lg={5}>
-              <img src='' alt="" />
-            </Col> */}
+          <Col md={5} lg={5} sm={12}>
+            <div className="graph-circle">
+<div className="graph-inner">
+  
+</div>
+            </div>
+          </Col>
           </Row>
         </Container>
       </Container>

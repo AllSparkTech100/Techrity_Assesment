@@ -176,12 +176,31 @@
   justify-content: center;
   .donations_inner {
     margin: auto;
-    background: red;
+
     h5 {
       font-size: 2rem;
     }
     p {
       word-wrap: break-word;
+      color: $white;
+    }
+
+    .graph-circle {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      background: $white;
+      padding: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .graph-inner {
+        background-color: $black;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+      }
     }
   }
 }
