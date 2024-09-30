@@ -213,7 +213,7 @@ function Home() {
           <div className="project-list">
             <Row>
               {/* mission */}
-              <Col md={4} lg={4} sm={12} className='mb-md-0 mb-lg-0  mb-4'>
+              <Col md={4} lg={4} sm={12} className="mb-md-0 mb-lg-0  mb-4">
                 <div className=" mission mission bg-image">
                   <div className="ms-3">
                     <h5 className="text-capitalize">
@@ -233,7 +233,7 @@ function Home() {
                 </div>
               </Col>
               {/* excursion */}
-              <Col md={4} lg={4} sm={12} className='mb-md-0 mb-lg-0  mb-4'>
+              <Col md={4} lg={4} sm={12} className="mb-md-0 mb-lg-0  mb-4">
                 <div className="mission excursion bg-image">
                   <div className="ms-3">
                     <h5 className="text-capitalize">weekly excursion</h5>
@@ -251,7 +251,7 @@ function Home() {
                 </div>
               </Col>
               {/* awareness */}
-              <Col md={4} lg={4} sm={12} className='mb-md-0 mb-lg-0  mb-4'>
+              <Col md={4} lg={4} sm={12} className="mb-md-0 mb-lg-0  mb-4">
                 <div className="mission awareness bg-image">
                   <div className="ms-3">
                     <h5 className="text-capitalize">
@@ -278,25 +278,55 @@ function Home() {
       <Container className="donations" fluid>
         <Container className="donations_inner">
           <Row>
-            <Col md={7} lg={7} sm={12}>
-              <h5 className="text-white">
-                How we spend your <br />
-                donations and where it goes
-              </h5>
-              <p className="my-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Similique consequatur voluptatem, ut nulla veritatis accusantium
-                totam ad, optio incidunt velit eum! Fugiat necessitatibus
-                laborum assumenda.
-              </p>
+            <Col md={8} lg={8} sm={12}>
+              <div className="left-title">
+                <h5 className="text-white">
+                  How we spend your <br />
+                  donations and where it goes
+                </h5>
+                <p className="my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Similique consequatur voluptatem, ut nulla veritatis
+                  accusantium totam ad, optio incidunt velit eum! Fugiat
+                  necessitatibus laborum assumenda.
+                </p>
+                <div className="graph-explaination">
+                  {/* Chart Explaination */}
+                  <div className="graph-control">
+                    <div className="graph-box bg-grey"></div>
+                    <div className="graph-text ms-1">40% Child Care Home</div>
+                  </div>
+                  {/* Chart 2 */}
+                  <div className="graph-control">
+                    <div className="graph-box bg-primary"></div>
+                    <div className="graph-text ms-1">35% Cleaniness Program</div>
+                  </div>
+
+                  {/* Chart 3 */}
+                  <div className="graph-control">
+                    <div className="graph-box bg-white"></div>
+                    <div className="graph-text ms-1">10% Helping People</div>
+                  </div>
+
+                  {/* Chart 4 */}
+                  <div className="graph-control">
+                    <div className="graph-box bg-warning"></div>
+                    <div className="graph-text ms-1">10% Excursions</div>
+                  </div>
+
+                  {/* Chart 5 */}
+                  <div className="graph-control">
+                    <div className="graph-box bg-pink"></div>
+                    <div className="graph-text ms-1">5% Feeding the Poor</div>
+                  </div>
+                </div>
+              </div>
             </Col>
-          <Col md={5} lg={5} sm={12}>
-            <div className="graph-circle">
-<div className="graph-inner">
-  
-</div>
-            </div>
-          </Col>
+            <Col md={4} lg={4} sm={12} className="ms-md-0 ms-lg-0 ms-4 mt-5">
+              <div className="graph-circle">
+                <div className="graph-inner"></div>
+              </div>
+            </Col>
           </Row>
         </Container>
       </Container>
@@ -363,7 +393,7 @@ function Home() {
                     </h5>
                   </div>
                   <div className="day-title text-capitalize">
-                   Seminar: caring for children with autism
+                    Seminar: caring for children with autism
                   </div>
                   <div className="calendar_btn">
                     <a href="">

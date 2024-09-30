@@ -176,13 +176,49 @@
   justify-content: center;
   .donations_inner {
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .left-title {
+      position: relative;
+      top: 30px;
+      h5 {
+        font-size: 3rem;
+      }
+      p {
+        word-wrap: break-word;
+        color: $white;
+        text-align: justify;
+      }
 
-    h5 {
-      font-size: 2rem;
-    }
-    p {
-      word-wrap: break-word;
-      color: $white;
+      .graph-explaination {
+        position: relative;
+        top: 30px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-auto-rows: 1;
+
+        line-height: 2;
+        .graph-control {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          .graph-text {
+            color: $white;
+          }
+          .graph-box {
+            height: 20px;
+            width: 20px;
+            border-radius: 5px;
+            &.bg-grey {
+              background-color: grey;
+            }
+            &.bg-pink {
+              background-color: pink;
+            }
+          }
+        }
+      }
     }
 
     .graph-circle {
@@ -197,8 +233,8 @@
 
       .graph-inner {
         background-color: $black;
-        height: 200px;
-        width: 200px;
+        height: 170px;
+        width: 170px;
         border-radius: 50%;
       }
     }
@@ -496,6 +532,28 @@
     .intro-text {
       h4 {
         font-size: 1.5rem;
+      }
+    }
+  }
+
+  .donations {
+    .donations_inner {
+      .left-title {
+        h5 {
+          font-size: 2rem;
+        }
+      }
+      .graph-explaination {
+        .graph-control {
+          //  flex-wrap: wrap;
+          .graph-text {
+            font-size: 12px;
+          }
+          .graph-box {
+            height: 50px;
+            width: 50px;
+          }
+        }
       }
     }
   }
