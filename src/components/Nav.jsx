@@ -24,19 +24,19 @@ function NavComp() {
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/activities">What We Do</Nav.Link>
             </Nav>
-              <button className="page-btn bg-dark">
-            <a href="/" className="text-white">
-              Donate
-            </a>
-          </button>
+            <button className="page-btn bg-dark">
+              <a href="/" className="text-white">
+                Donate
+              </a>
+            </button>
           </Navbar.Collapse>
-         
+
           <button
-                className="d-lg-none d-sm-block border-0 shadow-none"
-                onClick={toggleMenu}
-              >
-                {isMenuVisible ? <IoClose size={30}/> : <CiMenuFries size={30}/>}
-              </button>
+            className="d-lg-none d-sm-block border-0 shadow-none"
+            onClick={toggleMenu}
+          >
+            {isMenuVisible ? <IoClose size={30} /> : <CiMenuFries size={30} />}
+          </button>
         </Container>
       </Navbar>
       {isMenuVisible && (
@@ -53,10 +53,10 @@ function NavComp() {
                 What We Do
               </Nav.Link>
               <button className="page-btn bg-dark">
-            <a href="/" className="text-white">
-              Donate
-            </a>
-          </button>
+                <a href="/" className="text-white">
+                  Donate
+                </a>
+              </button>
             </ul>
           </div>
         </Container>
