@@ -2,6 +2,7 @@
 
 .hero-carrier {
   height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.657),
       rgba(10, 10, 10, 0.787)
@@ -61,6 +62,7 @@
 .service_carrier {
   background-color: $medium;
   height: 115vh;
+  
   margin-top: 4rem;
 
   .service-inner {
@@ -408,6 +410,34 @@
 
 // MEDIA QUERIES
 @media screen and (max-width: 320px) {
+
+  .hero-carrier{
+    .hero-inner{
+      .hero-bottom{
+        margin-top: 3rem;
+      }
+    }
+  }
+  .service_carrier{
+    height: 200vh !important ;
+    .service-inner{
+      h4{
+        font-size: 1.5rem !important;
+      }
+      p{
+        font-size: 18px;
+      }
+      .service-list{
+        .serv-list-item{
+          .serv-text{
+            p{
+              font-size: 18px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

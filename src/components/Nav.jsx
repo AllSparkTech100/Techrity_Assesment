@@ -31,12 +31,12 @@ function NavComp() {
             </button>
           </Navbar.Collapse>
 
-          <button
+          <div
             className="d-lg-none d-sm-block border-0 shadow-none"
             onClick={toggleMenu}
           >
-            {isMenuVisible ? <IoClose size={30} /> : <CiMenuFries size={30} />}
-          </button>
+            {isMenuVisible ? <IoClose size={40} /> : <CiMenuFries size={40} />}
+          </div>
         </Container>
       </Navbar>
       {isMenuVisible && (
@@ -52,7 +52,7 @@ function NavComp() {
               <Nav.Link href="/activities" className="">
                 What We Do
               </Nav.Link>
-              <button className="page-btn bg-dark">
+              <button className="page-btn w-100 bg-dark">
                 <a href="/" className="text-white">
                   Donate
                 </a>
