@@ -392,7 +392,7 @@ function Home() {
                       <span className="fw-normal text-uppercase">apr</span>
                     </h5>
                   </div>
-                  <div className="day-title text-capitalize">
+                  <div className="day-title text-capitalize ms-md-0 ms-lg-0">
                     Seminar: caring for children with autism
                   </div>
                   <div className="calendar_btn">
